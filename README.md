@@ -1,2 +1,6 @@
 # python-task-manager
-Gestor de tareas en consola con IDs, validación y menú interactivo.
+
+Aplicación en Python para administrar tareas desde la terminal.  
+Permite agregar, listar y eliminar tareas usando IDs únicos.
+
+## Funcionalidades
