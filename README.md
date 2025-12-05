@@ -3,7 +3,7 @@
 Aplicación de consola desarrollada en Python que permite gestionar tareas mediante un menú interactivo.  
 Este proyecto demuestra uso de estructuras de datos, validaciones, funciones modulares, ciclos `while`, y una lógica realista para CRUD básico.
 
-##Objetivo del Proyecto
+## Objetivo del Proyecto
 Implementar un sistema sencillo de gestión de tareas que permita:
 
 - Agregar tareas sin duplicados.
