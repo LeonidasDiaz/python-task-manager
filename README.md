@@ -56,3 +56,10 @@ ID   |  Nombre
 3    | Hacer ejercicio
 
 ```
+```python
+def listar_tareas(tareas):
+    print(f"{'ID':<4} | {'Nombre':<20}")
+    print("-" * 26)
+    for tarea in tareas:
+        print(f"{tarea['id']:<4} | {tarea['nombre']:<20}")
+```
