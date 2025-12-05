@@ -22,22 +22,37 @@ Este proyecto refuerza fundamentos de programación y construcción de aplicacio
 - IDs autoincrementales  
 - Separación clara por funciones
 ## Estructura del Proyecto
-```
-task-manager-cli/
-├main.py # Script principal
 
-```
-##  Estructura del código
-- `anadir_tarea()`
-- `listar_tareas()`
-- `eliminar_por_id()`
-- `mostrar_menu()`
-- `main()`
+task-manager-cli/
+-**main.py**- # Script principal
+- **README.md** - Documentación del proyecto (este archivo)
+
 ## Tecnologías usadas
 - Python 3
 - Manejo de listas y diccionarios
 - Validaciones
 - Formateo de texto con f-strings
-## Ejecutar
+
+## Cómo ejecutar
 ```bash
-python task_manager.py
+git clone https://github.com/LeonidasDiaz/python-task-manager
+cd python-task-manager
+python main.py
+```
+## EJemplo de Salida
+```
+===== MENÚ =====
+1. Añadir tarea
+2. Listar tareas
+3. Eliminar tarea por ID
+4. Salir
+================
+
+Tareas:
+ID   |  Nombre
+--------------------
+1    | Comprar leche
+2    | Estudiar Python
+3    | Hacer ejercicio
+
+```
