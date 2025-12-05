@@ -56,6 +56,7 @@ ID   |  Nombre
 3    | Hacer ejercicio
 
 ```
+## Fragmento de código principal
 ```python
 def listar_tareas(tareas):
     print(f"{'ID':<4} | {'Nombre':<20}")
