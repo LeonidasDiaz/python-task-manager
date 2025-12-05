@@ -24,7 +24,7 @@ Este proyecto refuerza fundamentos de programación y construcción de aplicacio
 ## Estructura del Proyecto
 
 task-manager-cli/
--**main.py** -Script principal
+-**main.py** - Script principal
 - **README.md** - Documentación del proyecto (este archivo)
 
 ## Tecnologías usadas
