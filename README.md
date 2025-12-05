@@ -1,9 +1,11 @@
-# Python-task-manager-cli
+# Python Task Manager CLI
 
 Aplicación de consola desarrollada en Python que permite gestionar tareas mediante un menú interactivo.  
 Este proyecto demuestra uso de estructuras de datos, validaciones, funciones modulares, ciclos `while`, y una lógica realista para CRUD básico.
+## Tabla de Contenido
 
 ## Objetivo del Proyecto
+
 Implementar un sistema sencillo de gestión de tareas que permita:
 
 - Agregar tareas sin duplicados.
@@ -64,3 +66,8 @@ def listar_tareas(tareas):
     for tarea in tareas:
         print(f"{tarea['id']:<4} | {tarea['nombre']:<20}")
 ```
+
+## Autor
+### Leonidas Diaz
+GitHub: [@LeonidasDiaz](https://github.com/LeonidasDiaz)
+
