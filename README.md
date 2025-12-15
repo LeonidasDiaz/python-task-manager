@@ -24,14 +24,12 @@ Una aplicación de línea de comandos desarrollada en Python para gestionar tare
 - Sin dependencias externas - Python puro, sin instalaciones adicionales
 - Este proyecto refuerza fundamentos de programación y construcción de aplicaciones CLI.
 
-## Funcionalidades
--  Menú interactivo  
-- Agregar tareas con nombre único  
-- Listar tareas con alineación tabular  
-- Eliminar tareas por **ID**  
-- Validaciones de entrada (`try / except`)  
-- IDs autoincrementales  
-- Separación clara por funciones
+## Instalacion
+### Prerrequisitos
+- Python 3.8 o superior
+- Git (opcional, para clonar el repositorio)
+### Pasos de instalación
+
 ## Estructura del Proyecto
 
 task-manager-cli/
