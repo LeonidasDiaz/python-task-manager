@@ -55,7 +55,7 @@ task-manager-cli/
 - **main.py** - Script principal
 - **README.md** - Documentación del proyecto (este archivo)
 
-## Tecnologías usadas
+## Tecnologías 
 - Python 3.8+ - Lenguaje de programación principal
 - Estructuras de datos nativas - Listas y diccionarios para almacenamiento
 - f-strings avanzadas - Formateo tabular profesional con alineación
