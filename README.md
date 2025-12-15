@@ -8,7 +8,7 @@ Una aplicación de línea de comandos desarrollada en Python para gestionar tare
 - [Uso](#uso)
 - [Estructura del proyecto](#estructura-del-proyecto)
 - [Tecnologías](#tecnologías)
-- [Ejemplos de Código](#ejemplos-de-codigo)
+- [Ejemplos de Código](#ejemplos-de-código)
 - [Licencia](#licencia)
 - [Autor](#autor)
 
