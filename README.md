@@ -118,8 +118,14 @@ def eliminar_por_id(tareas):
     print(" No existe una tarea con ese ID.")
 
 ```
+## Licencia
+
+Este proyecto está bajo la **Licencia MIT**.  
+Consulta el archivo [LICENSE](LICENSE) para el texto completo.
+
 ## Autor
 ### Leonidas Diaz
 GitHub: [@LeonidasDiaz](https://github.com/LeonidasDiaz)
+
 ## Acerca del proyecto
 Este proyecto fue desarrollado como parte de mi aprendizaje y portafolio de programación en Python. El objetivo era crear una aplicación funcional y práctica que demuestre habilidades en desarrollo de software, manejo de datos y creación de interfaces de línea de comandos.
