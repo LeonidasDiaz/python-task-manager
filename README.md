@@ -1,19 +1,28 @@
-# Python Task Manager CLI
+# Task Manager CLI - Python
 
-Aplicación de consola desarrollada en Python que permite gestionar tareas mediante un menú interactivo.  
-Este proyecto demuestra uso de estructuras de datos, validaciones, funciones modulares, ciclos `while`, y una lógica realista para CRUD básico.
+Una aplicación de línea de comandos desarrollada en Python para gestionar tareas de manera eficiente. Ofrece un menú interactivo con operaciones CRUD completas, IDs autoincrementales y validaciones robustas.
+
 ## Tabla de Contenido
+- [Características](#características)
+- [Instalacion](#instalacion)
+- [Uso](#uso)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Tecnologías](#tecnologías)
+- [Ejemplos de codigo](#ejemplos-de-codigo)
+- [Licencia](#licencia)
+- [Autor](#autor)
 
-## Objetivo del Proyecto
 
-Implementar un sistema sencillo de gestión de tareas que permita:
-
-- Agregar tareas sin duplicados.
-- Listarlas en formato tabular.
-- Eliminarlas mediante ID.
-- Persistir la lógica en memoria durante la ejecución.
-
-Este proyecto refuerza fundamentos de programación y construcción de aplicaciones CLI.
+##  Características
+- Menú interactivo - Navegación intuitiva por consola
+- CRUD completo - Crear, Leer, Eliminar tareas
+- IDs autoincrementales - Identificadores únicos automáticos
+- Formato tabular profesional - Salida alineada y legible
+- Validación de duplicados - Evita tareas repetidas
+- Manejo de errores - Validación de entradas con try/except
+- Código modular - Funciones separadas y documentadas
+- Sin dependencias externas - Python puro, sin instalaciones adicionales
+- Este proyecto refuerza fundamentos de programación y construcción de aplicaciones CLI.
 
 ## Funcionalidades
 -  Menú interactivo  
