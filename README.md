@@ -56,44 +56,70 @@ task-manager-cli/
 - **README.md** - Documentación del proyecto (este archivo)
 
 ## Tecnologías usadas
-- Python 3
-- Manejo de listas y diccionarios
-- Validaciones
-- Formateo de texto con f-strings
+- Python 3.8+ - Lenguaje de programación principal
+- Estructuras de datos nativas - Listas y diccionarios para almacenamiento
+- f-strings avanzadas - Formateo tabular profesional con alineación
+- Manejo de excepciones - Validación robusta de entradas del usuario
+- Funciones modulares - Código organizado y mantenible
+- Programación imperativa - Flujo claro y lógico
 
-## Cómo ejecutar
-```bash
-git clone https://github.com/LeonidasDiaz/python-task-manager
-cd python-task-manager
-python main.py
-```
-## EJemplo de Salida
-```
-===== MENÚ =====
-1. Añadir tarea
-2. Listar tareas
-3. Eliminar tarea por ID
-4. Salir
-================
 
-Tareas:
-ID   |  Nombre
---------------------
-1    | Comprar leche
-2    | Estudiar Python
-3    | Hacer ejercicio
-
-```
-## Fragmento de código principal
+## Ejemplos de Código
+### Función principal para listar tareas
 ```python
 def listar_tareas(tareas):
-    print(f"{'ID':<4} | {'Nombre':<20}")
-    print("-" * 26)
-    for tarea in tareas:
-        print(f"{tarea['id']:<4} | {tarea['nombre']:<20}")
+    """Muestra las tareas en formato tabla con ID."""
+    if not tareas:
+        print(" No hay tareas registradas.")
+        return
+    print(f"{'ID':>3} | {'Tarea':<25} | {'Categoría':<15} | {'Estado':<10}")
+    print("-" * 62)
+    for t in tareas:
+        print(f"{t['id']:>3} | {t['nombre']:<25} | {t['categoria']:<15} | {t['estado']:<10}")
 ```
+### Función para añadir tareas con validación de duplicados
+```python
+def anadir_tarea(tareas, next_id):
+    """Añade una tarea con ID incremental único."""
+    nombre = input("Nombre de la tarea: ").strip()
+    categoria = input("Categoría: ").strip()
 
+    # Verificar duplicados por nombre (opcional)
+    for t in tareas:
+        if t["nombre"].casefold() == nombre.casefold():
+            print(" Esa tarea ya existe (evitamos duplicados).")
+            return next_id
+
+    tareas.append({
+        "id": next_id,
+        "nombre": nombre,
+        "categoria": categoria,
+        "estado": "pendiente",
+    })
+    print(f" Tarea añadida con ID {next_id}.")
+    return next_id + 1
+```
+### Función para eliminar tareas por ID
+```python
+def eliminar_por_id(tareas):
+    """Elimina una tarea según su ID único."""
+    try:
+        id_obj = int(input("Ingrese el ID de la tarea a eliminar: "))
+    except ValueError:
+        print(" Debe ingresar un número entero.")
+        return
+
+    for i, t in enumerate(tareas):
+        if t["id"] == id_obj:
+            tareas.pop(i)
+            print(" Tarea eliminada.")
+            return
+
+    print(" No existe una tarea con ese ID.")
+
+```
 ## Autor
 ### Leonidas Diaz
 GitHub: [@LeonidasDiaz](https://github.com/LeonidasDiaz)
-
+## Acerca del proyecto
+Este proyecto fue desarrollado como parte de mi aprendizaje y portafolio de programación en Python. El objetivo era crear una aplicación funcional y práctica que demuestre habilidades en desarrollo de software, manejo de datos y creación de interfaces de línea de comandos.
