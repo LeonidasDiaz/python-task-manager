@@ -29,7 +29,16 @@ Una aplicación de línea de comandos desarrollada en Python para gestionar tare
 - Python 3.8 o superior
 - Git (opcional, para clonar el repositorio)
 ### Pasos de instalación
+#### 1.Clonar el repositorio
+```bash
+git clone https://github.com/LeonidasDiaz/python-task-manager
+cd python-task-manager
+```
+#### 2.Ejecutar directamente (sin instalación adicional)
+```bash
+python main.py
 
+```
 ## Estructura del Proyecto
 
 task-manager-cli/
